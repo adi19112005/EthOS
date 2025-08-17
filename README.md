@@ -1,35 +1,41 @@
 # EthOS
 
-![EthOS Logo](path/to/logo.png)  <!-- optional, replace with your branding -->
-
-**A lightweight, secure, and fully proprietary Linux OS for EthoHome smart devices.**
+EthOS is a **privacy-first, local smart home operating system** designed for Raspberry Pi 4/5.  
+It forms the foundation of the EthoHome ecosystem, enabling secure, low-latency control of smart devices and home automation without relying on the cloud.
 
 ---
 
-## Overview
+## Purpose
 
-**EthOS** is a custom embedded Linux operating system designed specifically for **EthoHome devices** like EthoHub, EthoVoice, and EthoSwitch.  
+EthOS provides a minimal, stable, and modular OS that allows users to:
 
-It is:
-
-- Lightweight and optimized for Raspberry Pi 4/5
-- Secure by design, with SSH key-only access and overlay filesystems
-- Modular and future-proof, ready for OTA updates and native backend integration
+- **Run smart home backend locally** for device discovery, onboarding, and control.
+- **Integrate multiple hardware protocols** like Zigbee, Z-Wave, Matter, Thread, and MQTT.
+- **Ensure privacy and security** by keeping all smart home data local.
+- **Provide persistent storage** for device configurations and automations.
 
 ---
 
 ## Key Features
 
-- **Minimal OS footprint** – optimized for speed and low memory usage  
-- **Native backend execution** – no Docker overhead  
-- **Systemd init** – reliable service management  
-- **Networking ready** – DHCP, optional Wi-Fi, mDNS  
-- **Secure SSH** – key-based authentication  
-- **Persistent storage** – `/data` overlay for configs and logs  
-- **First-boot provisioning** – host keys, users, and storage ready  
-- **Future OTA support** – compatible with RAUC or swupdate  
+- Lightweight, Buildroot-based OS optimized for Raspberry Pi
+- Systemd as init system for robust service management
+- SSH server enabled for remote access and administration
+- Persistent `/data` directory for storing user/device data
+- Supports EthoHome backend service for local smart home control
+- Custom branding for an integrated smart home experience
 
 ---
 
-## Architecture
+## Vision
 
+EthOS is designed to be the backbone of a modular smart home ecosystem:
+
+- **Local-first control:** All devices and automations run locally, ensuring privacy and responsiveness.
+- **Scalable and modular:** Easily expandable to support new devices and future AI-powered automations.
+- **Seamless integration:** Prepares the system to host the EthoHome backend and connect with a variety of smart home hardware.
+- **User-focused design:** Minimal, reliable, and optimized for everyday use in a home environment.
+
+---
+
+EthOS is the foundation for a secure, private, and fully local smart home ecosystem.
